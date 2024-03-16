@@ -1,0 +1,13 @@
+.active {
+    color: rgb(132, 40, 212);
+  }
+  .link {
+    font-size: 20px;
+    &:hover {
+      color:rgb(42, 52, 165);
+    }
+  }
+  .nav {
+    display: flex;
+    gap: 20px;
+  }

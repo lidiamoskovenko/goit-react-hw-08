@@ -1,0 +1,10 @@
+.container{
+    height: 100vh;
+    background-image: url(../../image/photo_2024-03-16_12-52-49.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 40px
+
+};

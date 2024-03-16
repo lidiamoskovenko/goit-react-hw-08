@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #faecec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .active {
+    color: brown;
+  }

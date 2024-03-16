@@ -1,0 +1,14 @@
+.btn {
+    background-color: rgba(0, 213, 255, 0.991);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+  }

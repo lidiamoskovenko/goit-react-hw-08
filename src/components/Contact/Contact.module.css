@@ -1,0 +1,26 @@
+.contactListItem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content:space-between;
+
+        width: 100%;
+        padding: 10px;
+        border-radius: 15px;
+        border: 2px solid black;
+        background-color: rgba(196, 232, 255, 0.5);
+
+    }
+    .contactBtn{
+        display: block;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgba(80, 0, 104, 0.2);;
+        cursor: pointer;
+        transition: 450ms;
+    
+    }
+    .contactBtn:is(:hover) {
+        background-color: rgba(0, 101, 104,0.5);
+      
+      }
