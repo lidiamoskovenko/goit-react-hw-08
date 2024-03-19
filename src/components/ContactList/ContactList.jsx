@@ -7,7 +7,7 @@ import { filtData } from "../../redux/contact/selector";
 export const ContactList = () => {
   const filteredContacts = useSelector(filtData);  return (
     <div >
-      {filteredContacts.length > 0 ?(<ul className={css.contactList}>
+      {filteredContacts ? (<ul className={css.contactList}>
         {filteredContacts.map((contact) => (
           <Contact key={contact.id} contact={contact} />
         ))}
