@@ -14,13 +14,18 @@ const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
 const RegisterPage = lazy(() => import("./pages/Register/Register"));
 const LoginPage = lazy(() => import("./pages/Login/Login"));
 const Contacts = lazy(() => import("./pages/Contacts/Contacts"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage.jsx"));
+
 export const App = () => {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch]);
+
   const isRefreshed = useSelector(selectIsRefreshing);
   const isLoading = useSelector(selectIsLoading);
+
   return (
     <>
       {isRefreshed ? (
@@ -55,6 +60,7 @@ export const App = () => {
                 }
               />
             </Route>
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>
       )}
